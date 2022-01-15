@@ -1,4 +1,4 @@
-require('babel-register');
+ require('babel-register');
 require('babel-polyfill');
 require('dotenv').config();
 const HDWalletProvider = require('truffle-hdwallet-provider-privkey');
@@ -27,6 +27,7 @@ module.exports = {
   contracts_build_directory: './src/abis/',
   compilers: {
     solc: {
+      version: "0.5.0",
       optimizer: {
         enabled: true,
         runs: 200
